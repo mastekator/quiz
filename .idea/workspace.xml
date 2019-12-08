@@ -11,10 +11,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UbqBAaZeh3TjKMpj5zQMb4fRUP" />
   <component name="PropertiesComponent">
@@ -68,11 +71,23 @@
       <option name="presentableId" value="Default" />
       <updated>1575635504624</updated>
       <workItem from="1575635505701" duration="182000" />
-      <workItem from="1575637721312" duration="6184000" />
+      <workItem from="1575637721312" duration="6293000" />
+      <workItem from="1575801502663" duration="4950000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
