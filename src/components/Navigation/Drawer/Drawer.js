@@ -3,22 +3,22 @@ import classes from './Drawer.module.css';
 import Backdrop from "../../UI/Backdrop/Backdrop";
 
 const links = [
-    1, 2, 3
-]
+    '/about', '/'
+];
 
 class Drawer extends Component {
     renderLinks() {
         return links.map((link, index) => {
             return (
                 <li key={index}>
-                    <a>Link {link}</a>
+                    <a href={link}>{link}</a>
                 </li>
             )
         })
     }
 
     render() {
-        const cls = [classes.Drawer]
+        const cls = [classes.Drawer];
         if (!this.props.isOpen) {
             cls.push(classes.close)
         }
