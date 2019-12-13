@@ -8,7 +8,7 @@ import is from 'is_js'
 export default class Auth extends Component {
 
     state = {
-        isFormValid : false,
+        isFormValid: false,
         formControls: {
             email: {
                 value: '',
@@ -39,22 +39,22 @@ export default class Auth extends Component {
         }
     };
 
-    validateControl (value, validation) {
-        if (!validation){
+    validateControl(value, validation) {
+        if (!validation) {
             return true
         }
 
         let isValid = true;
 
-        if (validation.required){
+        if (validation.required) {
             isValid = value.trim() !== '' && isValid
         }
 
         if (validation.email) {
-           isValid = is.email(value) && isValid
+            isValid = is.email(value) && isValid
         }
 
-        if (validation.minLength){
+        if (validation.minLength) {
             isValid = value.length >= validation.minLength && isValid
         }
 
@@ -71,14 +71,14 @@ export default class Auth extends Component {
 
         formControls[controlName] = control;
 
-        let isFormValid = true
+        let isFormValid = true;
 
         Object.keys(formControls).forEach(name => {
             isFormValid = formControls[name].valid && isFormValid
         });
 
         this.setState({
-            formControls, isFormValid
+            isFormValid,formControls
         });
 
     };
