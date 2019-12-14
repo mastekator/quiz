@@ -23,18 +23,16 @@ export default class Auth extends Component {
                 }
             },
             password: {
-                email: {
-                    value: '',
-                    type: 'password',
-                    label: 'Пароль',
-                    errorMessage: 'Введие корректный пароль',
-                    valid: false,
-                    touched: false,
-                    validation: {
-                        required: true,
-                        minLength: 6
-                    }
-                },
+                value: '',
+                type: 'password',
+                label: 'Пароль',
+                errorMessage: 'Введие корректный пароль',
+                valid: false,
+                touched: false,
+                validation: {
+                    required: true,
+                    minLength: 6
+                }
             },
         }
     };
@@ -69,6 +67,7 @@ export default class Auth extends Component {
         control.touched = true;
         control.valid = this.validateControl(control.value, control.validation);
 
+
         formControls[controlName] = control;
 
         let isFormValid = true;
@@ -78,7 +77,7 @@ export default class Auth extends Component {
         });
 
         this.setState({
-            isFormValid,formControls
+            isFormValid, formControls
         });
 
     };
